@@ -1,0 +1,77 @@
+.black-layout-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 70px;
+  padding-right:0px!important ;
+  padding-bottom:0px!important ;
+  background-color: #111;
+  color: white;
+  box-sizing: border-box;
+}
+
+.black-layout-left,
+.black-layout-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.black-layout-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 20px;
+  height: 100%;
+}
+
+.black-layout-title {
+  font-size: 42px;
+  font-weight: 500;
+  color: white;
+  line-height: 1.5;
+}
+
+.black-layout-button {
+  padding: 12px 24px;
+  background-color:transparent;
+  color: #ffffff;
+  cursor: pointer;
+  width: fit-content;
+  border: 1px solid white;
+  align-self: flex-start;
+  margin-bottom: 40px;
+}
+
+.black-layout-left-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  
+}
+
+.black-layout-image-wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: auto; 
+}
+
+.black-layout-big-image {
+  width: 100%;
+  z-index: 1;
+}
+h2.black-layout-title{
+  margin: 0;
+}
+
+.black-layout-small-image {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 2%;
+  transform: translate(-40%, -23%);
+  z-index: 2;
+
+}
