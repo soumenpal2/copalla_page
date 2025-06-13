@@ -1,30 +1,19 @@
+// App.js
 import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import VideoGrid from './components/VideoGrid';
-import Layout from "./components/second-Layout";
-import NewBlackLayout from "./components/NewBlackLayout";
-import GreyLayout from "./components/GreyLayout";
-import VideoSliderLayout from './components/VideoSliderLayout';
-import MasonryGallery from './components/MasonryGallery';
-import SplitFeatureSection from './components/SplitFeatureSection';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/home/Home';
+import AboutPage from './components/about/AboutPage';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <VideoGrid />
-      <Layout />
-      <VideoSliderLayout />
-      <NewBlackLayout />
-      <MasonryGallery/>
-      <GreyLayout/>
-      <SplitFeatureSection/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
-

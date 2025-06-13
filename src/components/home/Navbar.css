@@ -1,4 +1,4 @@
-
+/* Reset and box-sizing */
 *,
 *::before,
 *::after {
@@ -8,56 +8,67 @@
 body, html {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
+/* Navbar styles */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
   width: 100%;
   padding: 20px 50px;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.3); /* transparent background */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
   z-index: 1000;
 }
 
+/* Logo styling */
 .logo {
   font-size: 28px;
   font-weight: 600;
+  color: #fff;
 }
 
+/* Nav links (desktop) */
 .nav-links {
   display: flex;
-  list-style: none;
   gap: 30px;
+  list-style: none;
   margin: 0;
   padding: 0;
-  transition: all 0.3s ease;
 }
 
-.nav-links li {
-  cursor: pointer;
+/* Each link style */
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
+.nav-links li a:hover {
+  color: #ffd700; /* golden yellow on hover */
+}
+
+/* Mobile menu toggle button (hamburger) */
 .menu-toggle {
   display: none;
   flex-direction: column;
-  cursor: pointer;
   gap: 5px;
-  padding: 10px;
+  cursor: pointer;
 }
 
 .menu-toggle .bar {
   width: 25px;
   height: 3px;
   background: white;
+  transition: 0.3s;
 }
 
+/* Mobile view styles */
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex;
@@ -65,18 +76,21 @@ body, html {
 
   .nav-links {
     display: none;
+    flex-direction: column;
     position: absolute;
     top: 70px;
     right: 30px;
-    background: rgba(0, 0, 0, 0.9);
-    flex-direction: column;
+    background: rgba(0, 0, 0, 0.95);
     padding: 20px;
+    border-radius: 10px;
     gap: 20px;
-    border-radius: 8px;
-    z-index: 9999;
   }
 
   .nav-links.active {
     display: flex;
+  }
+
+  .nav-links li a {
+    font-size: 18px;
   }
 }

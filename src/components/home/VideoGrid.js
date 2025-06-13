@@ -2,7 +2,7 @@ import React from 'react';
 import './VideoGrid.css';
 
 const videos = [
-  { src: '/videos/video-1.mp4', title: 'MAIN HOME', link: 'https://example.com/1' },
+  { src: '/videos/video-1.mp4', title: 'MAIN HOME', link: '/about' },
   { src: '/videos/video2.mp4', title: 'VERTICAL SPLIT SHOWCASE', link: 'https://example.com/2' },
   { src: '/videos/video3.mp4', title: 'HORIZONTAL SCROLL SHOWCASE ', link: 'https://example.com/3' },
   { src: '/videos/video-4.mp4', title: 'FILM FESTIVAL', link: 'https://example.com/4' },

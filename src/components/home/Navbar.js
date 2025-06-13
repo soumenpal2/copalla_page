@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; 
 import './Navbar.css';
 
 function Navbar() {
@@ -15,9 +16,9 @@ function Navbar() {
       </div>
 
       <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
-        <li>Home</li>
-        <li>Work</li>
-        <li>Contact</li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li> 
+        <li><Link to="/contact">Contact</Link></li>
       </ul>
     </nav>
   );
