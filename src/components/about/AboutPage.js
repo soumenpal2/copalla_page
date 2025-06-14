@@ -8,6 +8,7 @@ import TwoSectionLayout from './TwoSectionLayout';
 import TestimonialSlider from './TestimonialSlider';
 import ScrollingShowcase from './animatedtext';
 import LeftTextSection from './LeftTextSection'; 
+import Footer from './Footer';
 
 const AboutPage = () => {
   return (
@@ -33,7 +34,7 @@ const AboutPage = () => {
 <TestimonialSlider/>
 <ScrollingShowcase/>
 <LeftTextSection/>
-
+<Footer />
 
 
 
