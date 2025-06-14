@@ -8,6 +8,7 @@ import TwoSectionLayout from './TwoSectionLayout';
 import TestimonialSlider from './TestimonialSlider';
 import ScrollingShowcase from './animatedtext';
 import LeftTextSection from './LeftTextSection'; 
+import MasonryGallery from './MasonryGallery';
 import Footer from './Footer';
 
 const AboutPage = () => {
@@ -37,6 +38,7 @@ We believe in powerful storytelling and meaningful engagement, whether through c
 <TwoSectionLayout/>
 <TestimonialSlider/>
 <ScrollingShowcase/>
+<MasonryGallery />
 <LeftTextSection/>
 <Footer />
 

@@ -21,8 +21,8 @@ function Hero() {
       <div className="overlay"></div>
 
       <div className="hero-content">
-        <p>NOW SHOWING IT'S</p>
-        <h2>COPPOLA</h2>        
+        <p>WELCOME TO</p>
+        <h2>VMAA</h2>        
       </div>
     </div>
   );
