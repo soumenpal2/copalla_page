@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; 
 import './Navbar.css';
+import logoImg from '../../assets/logo.png';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="navbar">
-      <h1 className="logo">Coppola</h1>
+      <div className="logo">
+        <img src={logoImg} alt="Coppola Logo" />
+      </div>
 
       <div className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
         <div className="bar"></div>
@@ -15,11 +17,9 @@ function Navbar() {
         <div className="bar"></div>
       </div>
 
-      <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li> 
-        <li><Link to="/contact">Contact</Link></li>
-      </ul>
+      <div className={`nav-actions ${isOpen ? 'active' : ''}`}>
+        <button className="action-btn">Get Started</button>
+      </div>
     </nav>
   );
 }

@@ -1,4 +1,4 @@
-/* Reset and box-sizing */
+
 *,
 *::before,
 *::after {
@@ -17,40 +17,44 @@ body, html {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 50px;
-  background: rgba(0, 0, 0, 0.3); /* transparent background */
+  padding: 0px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
 }
 
+ .navbar:hover{
+  background: rgba(0, 0, 0, 0.5);
+ }
+
 /* Logo styling */
-.logo {
-  font-size: 28px;
-  font-weight: 600;
-  color: #fff;
+.logo img {
+  width: 120px;
+  height: auto;
 }
 
-/* Nav links (desktop) */
-.nav-links {
+/* Right-side button */
+.nav-actions {
   display: flex;
-  gap: 30px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  align-items: center;
 }
 
-/* Each link style */
-.nav-links li a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  transition: color 0.3s ease;
+.action-btn {
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.nav-links li a:hover {
-  color: #ffd700; /* golden yellow on hover */
+.action-btn:hover {
+  background-color: #f6f6f5;
+  color: #000;
+  border-color: #ffffff;
 }
 
 /* Mobile menu toggle button (hamburger) */
@@ -68,29 +72,31 @@ body, html {
   transition: 0.3s;
 }
 
-/* Mobile view styles */
+/* Mobile styles */
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex;
   }
 
-  .nav-links {
+  .nav-actions {
     display: none;
-    flex-direction: column;
     position: absolute;
     top: 70px;
     right: 30px;
     background: rgba(0, 0, 0, 0.95);
+    opacity:0.5;
     padding: 20px;
     border-radius: 10px;
-    gap: 20px;
   }
 
-  .nav-links.active {
+  .nav-actions.active {
     display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 
-  .nav-links li a {
-    font-size: 18px;
+  .action-btn {
+    font-size: 16px;
+    width: 100%;
   }
 }
