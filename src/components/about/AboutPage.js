@@ -18,13 +18,17 @@ const AboutPage = () => {
     <div className="black-section">
   <div className="text-container left">
      <p>
-					SYNOPSIS</p>
+					ABOUT US</p>
     <h1>
-					The telling of two intertwining lives. Mass Destruction</h1>
+					Highlights both storytelling and influence.</h1>
   </div>
   <div className="text-container right">
     <p>
-      Cum sociis Theme natoque penatibus et magnis dis part montes, nascetur ridiculus mus. Aliquam loremante, dapibus in, viverra. Dolor orem Ipsn vuctor aliquet re ipsum dolor sit amet rem Ipsn gravida nibh vel velit auct Curabitur ullamcorper ultricies nisi. Nam eget, etiam mea.
+      VMAA Entertainment is a dynamic and multifaceted media and event production company, specializing in the creation of high-quality feature films, web series, ad films, corporate films, documentaries, and comprehensive event services. Our team comprises highly experienced professionals from diverse backgrounds, bringing together a unique blend of creativity, technical expertise, and strategic insight.
+
+We believe in powerful storytelling and meaningful engagement, whether through cinema, branded content, or live experiences. Our work spans both national and international markets, with a commitment to excellence and originality.
+
+
     </p>
   </div>
 </div>

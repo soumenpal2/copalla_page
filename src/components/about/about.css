@@ -17,18 +17,18 @@
    font-size: 22px;
 }
 .text-container.left h1 {
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 500;
   margin: 0;
   color: #fff;
-  width: 80%;
+  width: 70%;
 }
 
 .text-container.right p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
   color: #ffffff;
-  width: 70%;
+  width: 85%;
 }
 /* .......videocarousel.............. */
 
@@ -406,6 +406,66 @@ h2{
   font-size: 14px;
   color: #ccc;
 }
+
+
+/* Popup Styles */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background-color: #fff;
+  color: #000;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.popup-content h2 {
+  margin-top: 0;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.popup-content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.popup-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #edb21e;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background-color: #c99610;
+}
+
+
+
+
+
+
+
+
 
 /* ..............LeftTextSection............... */
 
